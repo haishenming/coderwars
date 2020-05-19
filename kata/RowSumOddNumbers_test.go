@@ -14,6 +14,7 @@ func TestRowSumOddNumbers(t *testing.T) {
 		// TODO: Add test cases.
 		{"1", args{1}, 1},
 		{"1", args{2}, 8},
+		{"1", args{4}, 13 + 15 + 17 + 19},
 		{"1", args{13}, 2197},
 		{"1", args{19}, 6859},
 		{"1", args{41}, 68921},
@@ -22,7 +23,6 @@ func TestRowSumOddNumbers(t *testing.T) {
 		{"1", args{86}, 636056},
 		{"1", args{93}, 804357},
 		{"1", args{101}, 1030301},
-		
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
